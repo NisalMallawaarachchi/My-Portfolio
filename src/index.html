@@ -1,12 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title> My Personal Portfolio Website </title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 <body>
-    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="C:\Users\dinuranga\Desktop\download.png">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p>Concept artist and Video editor</p>
+            <h1>Hi,I'm <span>Dinuranga</span><br>From Srilanka</h1>
+
+        </div>
+    </div>
+
+    <!-----------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <image src="images/IMG-20230524-WA0006.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Dinuranga kellapatha from Srilanka.I have the ability to create
+                        in different ways. I have a strong desire to create graphics and art concept in new ways.
+                        I am always looking for new ways to improve my skills and increase my knowledge. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link">Skills</p>
+                        <p class="tab-links">Education</p>
+                    </div>
+                    <div class="contents">
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>CONCEPT ARTSIST</span><br>Digital arts/Character design</li>
+                                <li><span>VIDEO EDITING</span><br>Motion graphics/Simple edits</li>
+                                <li><span>ILLUSTIATOR</span><br>Manupiulations/Advertising</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span><br>Diploma in Graphic Design</li>
+                                <li><span>2023</span><br>Undergraduate Adavanced Diploma in Adervertising and Multimedia
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------services------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <img src="images/palette-regular-24.png">
+                    <h2>Concept Arts</h2>
+                    <p>We can give these any concept arts services for you according to the concept arts section</p>
+                    <a herf="#">Learn more</a>
+                </div>
+                <div>
+                    <img src="images/film-regular-24.png">
+                    <h2>Video Editing</h2>
+                    <p>We can give these services for you according to the video editing section-
+                        classic video edis,montages,motion graphic videos and advertistmets</p>
+                    <a herf="#">Learn more</a>
+                </div>
+                <div>
+                    <img src="images/pen-solid-24.png">
+                    <h2>Illustriation</h2>
+                    <p>We can give these services for you according to the illusttrion section-
+                        vector arts,logo design and AD posters</p>
+                    <a herf="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------portfolio--------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Art works</h3>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.jpg">
+                    <div class="layer">
+                        <h3>Montages</h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpeg">
+                    <div class="layer">
+                        <h3>AD posters/Illustiations</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------contact------------->
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><img src="images/paper-plane-regular-24.png">dinurangakellapatha@gmali.com</p>
+                    <p><img src="images/phone-solid-24.png">0740722046</p>
+                    <div class="social-icons">
+                        <a href=""><i class='bx bxl-facebook-square'></i></a>
+                        <a href=""><i class='bx bxl-instagram'></i></a>
+                        <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                    </div>
+                    <a href="" class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="form" class="form" action="connect.php" method="POST">
+
+                        <div class="form-control">
+
+                            <input type="text" id="Name" name="name" placeholder="Your Name">
+                            <span style="color:red" id="name_error"></span>
+                        </div>
+
+                        <div class="form-control">
+
+                            <input type="email" id="email" name="email" placeholder="Your Email">
+                            <span style="color:red" id="email_error"></span>
+                        </div>
+                        <div class="form-control">
+
+                            <textarea id="message" name="message" rows="6" placeholder="Your Massage"></textarea>
+                            <span style="color:red" id="message_error"></span>
+                        </div>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="custom.js"></script>
+
 </body>
+
 </html>
